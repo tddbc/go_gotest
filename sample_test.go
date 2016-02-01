@@ -16,5 +16,5 @@ func TestSay(t *testing.T) {
 
 func TestSay_testify(t *testing.T) {
 	actual := Say("Hello!")
-	assert.Equal(t, actual, "Hello! TDD BootCamp!!", "they should be equal")
+	assert.Equal(t, "Hello! TDD BootCamp!!", actual, "they should be equal")
 }
