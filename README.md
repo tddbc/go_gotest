@@ -1,6 +1,8 @@
 # TDDBC GO Project
 _このプロジェクトは、TDDBC(Test Driven Development Boot Camp)で使用する GO 言語用のプロジェクトテンプレートです。_
 
+[![Build Status](https://travis-ci.org/tddbc/go_gotest.svg?branch=master)](https://travis-ci.org/tddbc/go_gotest)
+
 ## はじめに
 サンプルプロジェクトでは、HelloWorldクラスを作成し、Sayメソッドが呼ばれたときに"Hello TDD BootCamp!!"を返すプログラムがついてきます。
 
