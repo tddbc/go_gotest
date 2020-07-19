@@ -1,14 +1,10 @@
 language: go
 go:
-  - 1.7
-  - 1.8
-  - 1.9
-  - tip
-matrix:
-  allow_failures:
-  - go: tip
+  - 1.x
+
 branches:
   only:
     - master
+
 notifications:
   email: false
