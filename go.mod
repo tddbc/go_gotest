@@ -1,4 +1,4 @@
-module github.com/135yshr/go_gotest
+module github.com/tddbc/go_gotest
 
 go 1.13
 
