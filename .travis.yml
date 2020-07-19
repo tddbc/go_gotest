@@ -6,5 +6,8 @@ branches:
   only:
     - master
 
+env:
+  - GO111MODULE=ON
+
 notifications:
   email: false
