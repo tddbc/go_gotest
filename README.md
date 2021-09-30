@@ -43,13 +43,6 @@ sudo apt-get update
 sudo apt-get install go
 ```
 
-### 依存ライブラリのセットアップ
-[testify](https://github.com/stretchr/testify) を使っているので別途セットアップが必要です
-
-```sh
-go get github.com/stretchr/testify/assert
-```
-
 ## テストの実行方法
 ```
 go test
