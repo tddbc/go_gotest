@@ -21,13 +21,35 @@ func TestSay_testify(t *testing.T) {
 }
 
 func TestFizzBuzz(t *testing.T) {
-	actual := FizzBuzz(1)
-	assert.Equal(t, "1", actual, "this must return same number")
-}
-
-func TestFizzBuzz_3bai(t *testing.T) {
-	actual := FizzBuzz(3)
-	assert.Equal(t, "Fizz", actual, "3の倍数の場合はFizzを返す")
-	actual = FizzBuzz(6)
-	assert.Equal(t, "Fizz", actual, "3の倍数の場合はFizzを返す")
+	var actual string
+	table := []struct {
+		description string
+		input       int
+		output      string
+	}{
+		{
+			"数字をそのまま返す",
+			1,
+			"1",
+		},
+		{
+			"3の倍数の場合はFizzを返す",
+			3,
+			"Fizz",
+		},
+		{
+			"3の倍数の場合はFizzを返す",
+			6,
+			"Fizz",
+		},
+		{
+			"3の倍数の場合はFizzを返す",
+			111111,
+			"Fizz",
+		},
+	}
+	for _, v := range table {
+		actual = FizzBuzz(v.input)
+		assert.Equal(t, v.output, actual, v.description)
+	}
 }
