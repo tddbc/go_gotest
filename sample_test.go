@@ -24,3 +24,10 @@ func TestFizzBuzz(t *testing.T) {
 	actual := FizzBuzz(1)
 	assert.Equal(t, "1", actual, "this must return same number")
 }
+
+func TestFizzBuzz_3bai(t *testing.T) {
+	actual := FizzBuzz(3)
+	assert.Equal(t, "Fizz", actual, "3の倍数の場合はFizzを返す")
+	actual = FizzBuzz(6)
+	assert.Equal(t, "Fizz", actual, "3の倍数の場合はFizzを返す")
+}
