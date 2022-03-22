@@ -8,6 +8,8 @@ func Say(greeting string) string {
 
 func FizzBuzz(value int) string {
 	switch {
+	case value%15 == 0:
+		return "FizzBuzz"
 	case value%5 == 0:
 		return "Buzz"
 	case value%3 == 0:
