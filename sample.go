@@ -7,11 +7,12 @@ func Say(greeting string) string {
 }
 
 func FizzBuzz(value int) string {
-	if value%5 == 0 {
+	switch {
+	case value%5 == 0:
 		return "Buzz"
-	}
-	if value%3 == 0 {
+	case value%3 == 0:
 		return "Fizz"
+	default:
+		return fmt.Sprintf("%d", value)
 	}
-	return fmt.Sprintf("%d", value)
 }
